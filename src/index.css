@@ -1,68 +1,158 @@
+/* HYPERNOVA - Dark Mode Corporate Theme */
+
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
+  /* Color Palette - Brand Corrected */
+  --bg-dark: #0B1120;
+  --text-light: #e6f1ff;
+  --accent-blue: #446BB1;
+  --secondary-text: #94A3B8;
+
+  /* Additional useful colors */
+  --bg-card: #112240;
+  --accent-hover: #36558F;
+  --border-color: #233554;
+  --text-dark: #0B1120;
+
+  /* Typography */
+  font-family: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif;
+  line-height: 1.6;
   font-weight: 400;
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
+  /* Rendering */
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
+/* Reset & Base */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-a:hover {
-  color: #535bf2;
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
+  background-color: var(--bg-dark);
+  color: var(--text-light);
   min-height: 100vh;
 }
 
+/* Typography */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--text-light);
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
 h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+  font-size: 3rem;
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
+h2 {
+  font-size: 2.25rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+p {
+  color: var(--secondary-text);
+  margin-bottom: 1rem;
+}
+
+/* Links */
+a {
+  color: var(--accent-blue);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: var(--text-light);
+}
+
+/* Buttons */
+button,
+.btn {
+  display: inline-block;
+  background-color: var(--accent-blue);
+  color: var(--text-light);
+  border: none;
+  border-radius: 3px;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
   font-family: inherit;
-  background-color: #1a1a1a;
   cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+  transition: background-color 0.2s ease, transform 0.2s ease;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
+button:hover,
+.btn:hover {
+  background-color: var(--accent-hover);
+  transform: translateY(-1px);
+}
+
+button:focus,
+.btn:focus {
+  outline: 2px solid var(--accent-blue);
+  outline-offset: 2px;
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* Section spacing */
+section {
+  padding: 5rem 0;
+}
+
+/* Cards */
+.card {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 3px;
+  padding: 2rem;
+}
+
+/* Utility classes */
+.text-accent {
+  color: var(--accent-blue);
+}
+
+.text-secondary {
+  color: var(--secondary-text);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.25rem;
   }
-  a:hover {
-    color: #747bff;
+
+  h2 {
+    font-size: 1.75rem;
   }
-  button {
-    background-color: #f9f9f9;
+
+  section {
+    padding: 3rem 0;
   }
 }

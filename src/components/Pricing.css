@@ -1,0 +1,236 @@
+.pricing {
+  background-color: var(--bg-dark);
+  padding: 5rem 1.5rem;
+}
+
+.pricing__container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.pricing__title {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: var(--text-light);
+  text-align: center;
+  margin-bottom: 3rem;
+  letter-spacing: -0.02em;
+}
+
+.pricing__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: start;
+}
+
+/* Main Card - Pack Démarrage */
+.pricing__main-card {
+  background-color: #0f172a;
+  border: 1px solid #1e293b;
+  border-radius: 4px;
+  padding: 2.5rem;
+}
+
+.pricing__card-header {
+  margin-bottom: 1.5rem;
+}
+
+.pricing__card-name {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text-light);
+  margin-bottom: 0.5rem;
+}
+
+.pricing__card-subtitle {
+  font-size: 1rem;
+  color: var(--secondary-text);
+  margin: 0;
+}
+
+.pricing__card-price {
+  display: flex;
+  align-items: baseline;
+  gap: 0.25rem;
+  margin-bottom: 1rem;
+}
+
+.pricing__amount {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: var(--text-light);
+  line-height: 1;
+}
+
+.pricing__currency {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--text-light);
+}
+
+.pricing__label {
+  font-size: 1rem;
+  color: var(--secondary-text);
+  margin-left: 0.25rem;
+}
+
+.pricing__includes {
+  font-size: 0.95rem;
+  color: var(--accent-blue);
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+}
+
+.pricing__steps {
+  list-style: none;
+  margin: 0 0 2rem;
+  padding: 0;
+}
+
+.pricing__step {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  color: var(--secondary-text);
+  font-size: 0.95rem;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid #1e293b;
+}
+
+.pricing__step:last-child {
+  border-bottom: none;
+}
+
+.pricing__step-number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  background-color: var(--accent-blue);
+  color: var(--text-light);
+  font-size: 0.75rem;
+  font-weight: 600;
+  border-radius: 4px;
+  flex-shrink: 0;
+}
+
+.pricing__cta {
+  width: 100%;
+  text-align: center;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  border-radius: 4px;
+}
+
+/* Coaching Section */
+.pricing__coaching {
+  background-color: #0f172a;
+  border: 1px solid #1e293b;
+  border-radius: 4px;
+  padding: 2.5rem;
+}
+
+.pricing__coaching-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--text-light);
+  margin-bottom: 1.5rem;
+}
+
+.pricing__coaching-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.pricing__coaching-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  border-bottom: 1px solid #1e293b;
+}
+
+.pricing__coaching-item:last-child {
+  border-bottom: none;
+}
+
+.pricing__coaching-duration {
+  font-size: 1rem;
+  color: var(--text-light);
+  font-weight: 500;
+}
+
+.pricing__coaching-price {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--text-light);
+}
+
+.pricing__coaching-currency {
+  font-size: 0.875rem;
+  font-weight: 600;
+  margin-left: 0.125rem;
+}
+
+.pricing__coaching-label {
+  font-size: 0.75rem;
+  color: var(--secondary-text);
+  font-weight: 400;
+  margin-left: 0.25rem;
+}
+
+/* Guarantee */
+.pricing__guarantee {
+  font-size: 0.875rem;
+  color: var(--secondary-text);
+  font-style: italic;
+  text-align: center;
+  max-width: 700px;
+  margin: 2.5rem auto 0;
+  line-height: 1.6;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .pricing__grid {
+    gap: 1.5rem;
+  }
+
+  .pricing__main-card,
+  .pricing__coaching {
+    padding: 2rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .pricing {
+    padding: 3rem 1.5rem;
+  }
+
+  .pricing__title {
+    font-size: 1.75rem;
+    margin-bottom: 2rem;
+  }
+
+  .pricing__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .pricing__main-card,
+  .pricing__coaching {
+    padding: 1.5rem;
+  }
+
+  .pricing__amount {
+    font-size: 2.75rem;
+  }
+
+  .pricing__guarantee {
+    font-size: 0.8rem;
+    margin-top: 2rem;
+  }
+}

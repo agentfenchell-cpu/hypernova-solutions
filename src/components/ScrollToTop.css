@@ -1,0 +1,49 @@
+.scrolltop {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  width: 46px;
+  height: 46px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  background: rgba(255, 255, 255, 0.10);
+  color: rgba(255, 255, 255, 0.85);
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  opacity: 0;
+  transform: translateY(10px);
+  pointer-events: none;
+  transition: opacity 180ms ease, transform 180ms ease, background 180ms ease;
+  z-index: 90;
+  line-height: 0;
+}
+
+.scrolltop svg {
+  display: block;
+}
+
+.scrolltop--visible {
+  opacity: 0.55;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.scrolltop:hover {
+  opacity: 0.85;
+  background: rgba(255, 255, 255, 0.14);
+}
+
+.scrolltop:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.25);
+}
+
+@media (max-width: 768px) {
+  .scrolltop {
+    right: 16px;
+    bottom: 16px;
+    width: 42px;
+    height: 42px;
+  }
+}

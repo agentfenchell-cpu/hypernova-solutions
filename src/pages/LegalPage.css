@@ -1,0 +1,84 @@
+/* Full page background matches the site's dark theme */
+.legal-wrapper {
+  background-color: #0B1120;
+  min-height: 100vh;
+  padding: 120px 20px 80px;
+  display: flex;
+  justify-content: center;
+}
+
+/* The "Paper" card containing the text */
+.legal-container {
+  background-color: #FFFFFF;
+  max-width: 800px;
+  width: 100%;
+  padding: 60px;
+  border-radius: 4px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+}
+
+/* Typography */
+.legal-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #0B1120;
+  margin-bottom: 40px;
+  padding-bottom: 20px;
+  border-bottom: 4px solid #446BB1;
+}
+
+.legal-section-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #446BB1;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.legal-section-title:first-of-type {
+  margin-top: 0;
+}
+
+.legal-text {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #334155;
+  margin-bottom: 15px;
+}
+
+.legal-text:last-child {
+  margin-bottom: 0;
+}
+
+.legal-text strong {
+  color: #0f172a;
+  font-weight: 600;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .legal-wrapper {
+    padding: 100px 16px 60px;
+  }
+
+  .legal-container {
+    padding: 30px;
+  }
+
+  .legal-title {
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+  }
+
+  .legal-section-title {
+    font-size: 1.1rem;
+    margin-top: 25px;
+  }
+
+  .legal-text {
+    font-size: 0.95rem;
+  }
+}
