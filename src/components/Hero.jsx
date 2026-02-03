@@ -18,7 +18,12 @@ export default function Hero() {
         <h1 className="hero__headline">{content.hero.headline}</h1>
         <h2 className="hero__subhead">{content.hero.subhead}</h2>
         <p className="hero__value-prop">{content.hero.valueProp}</p>
-        <a href="#contact" className="btn hero__cta">
+        <a
+          href="https://buy.stripe.com/6oUdR80Q32er2qk89veIw00"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="btn hero__cta"
+        >
           {content.hero.cta}
         </a>
       </div>
