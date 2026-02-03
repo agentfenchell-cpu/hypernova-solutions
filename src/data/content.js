@@ -6,11 +6,11 @@ export const content = {
   },
 
   hero: {
-    overline: "AGENCE PARTENAIRE AMAZON",
+    overline: "AGENCE EXPERTE AMAZON",
     headline: "Sur Amazon, tout commence par l'ouverture du compte.",
     subhead: "Mais un compte mal configuré, c'est un rejet assuré.",
     valueProp:
-      "1 h 30 pour obtenir un compte Seller prêt à la vente, conforme aux standards d'Amazon.",
+      "1h30 pour obtenir un compte Seller prêt à la vente, conforme aux standards d'Amazon.",
     cta: "Réserver mon créneau",
   },
 

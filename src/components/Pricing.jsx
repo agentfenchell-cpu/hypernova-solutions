@@ -1,6 +1,12 @@
 import { content } from "../data/content";
 import "./Pricing.css";
 
+const coachingLinks = [
+  "https://buy.stripe.com/4gM5kC8ivbP1d4YfBXeIw01",  // Coaching 1H
+  "https://buy.stripe.com/6oU5kC9mz1and4Y0H3eIw02",  // Forfait 3H
+  "https://buy.stripe.com/dRmaEW7er5qDc0UgG1eIw03",  // Forfait 5H
+];
+
 export default function Pricing() {
   const { pricing, guarantees } = content;
 
@@ -34,7 +40,12 @@ export default function Pricing() {
               ))}
             </ul>
 
-            <a href="#contact" className="btn pricing__cta">
+            <a
+              href="https://buy.stripe.com/6oUdR80Q32er2qk89veIw00"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn pricing__cta"
+            >
               {pricing.packDemarrage.cta}
             </a>
           </div>
@@ -52,6 +63,14 @@ export default function Pricing() {
                     <span className="pricing__coaching-currency">{option.currency}</span>
                     <span className="pricing__coaching-label">{option.priceLabel}</span>
                   </span>
+                  <a
+                    href={coachingLinks[index]}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="pricing__coaching-cta"
+                  >
+                    Réserver
+                  </a>
                 </div>
               ))}
             </div>

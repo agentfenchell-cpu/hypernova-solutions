@@ -1,0 +1,62 @@
+.partners-section {
+  background-color: #0B1120;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+
+.partners-label {
+  color: #64748B;
+  font-size: 0.8rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin: 0;
+}
+
+.partners-logos {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+.partner-logo {
+  height: 35px;
+  width: auto;
+  opacity: 0.85;
+  transition: opacity 0.3s ease;
+}
+
+.partner-logo:hover {
+  opacity: 1;
+}
+
+/* Amazon logo keeps original colors */
+.amazon-fix {
+  height: 30px;
+  margin-top: 5px;
+  filter: none;  /* Remove white filter - show original colors */
+  opacity: 0.85;
+}
+
+.amazon-fix:hover {
+  opacity: 1;
+}
+
+.partner-divider {
+  width: 1px;
+  height: 40px;
+  background-color: rgba(255,255,255,0.1);
+}
+
+@media (max-width: 600px) {
+  .partners-logos {
+    gap: 30px;
+  }
+  .partner-logo {
+    height: 25px;
+  }
+}

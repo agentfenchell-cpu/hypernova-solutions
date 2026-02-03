@@ -6,6 +6,8 @@ export default function Footer() {
     <footer className="footer">
       <div className="footer__container">
         <div className="footer__links">
+          <Link to="/cgv" className="footer__link">CGV</Link>
+          <span className="footer__separator">|</span>
           <Link to="/mentions-legales" className="footer__link">Mentions légales</Link>
           <span className="footer__separator">|</span>
           <Link to="/confidentialite" className="footer__link">Politique de confidentialité</Link>
